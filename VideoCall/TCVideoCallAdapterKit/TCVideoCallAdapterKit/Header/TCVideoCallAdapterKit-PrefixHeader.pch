@@ -1,0 +1,24 @@
+//
+//  TCVideoCallAdapterKit-PrefixHeader.h
+//  TCQAVAdapterKit
+//
+//  Created by 任清阳 on 2017/2/25.
+//  Copyright © 2017年 任清阳. All rights reserved.
+//
+
+#ifndef TCVideoCallAdapterKit_PrefixHeader_h
+#define TCVideoCallAdapterKit_PrefixHeader_h
+
+#pragma mark - ******************************************* 公用依赖库 ********************************
+
+#import <QAVSDK/QAVSDK.h>
+#import <ImSDK/ImSDK.h>
+
+#import <QAVSDK/QAVContext.h>
+#import <QAVSDK/QAVSDK.h>
+#import <QAVSDK/QAVAudioCtrl.h>
+
+#pragma mark - ******************************************* MTBVC ***********************************
+
+
+#endif /* TCVideoCallAdapterKit_PrefixHeader_h */

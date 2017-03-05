@@ -7,13 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF1611E71E6C005D00C6A6DA /* TCVideoCallAdapterKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1611E51E6C005D00C6A6DA /* TCVideoCallAdapterKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF1611F01E6C00F900C6A6DA /* TCVideoCallAdapterKit-PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = CF1611EE1E6C00F900C6A6DA /* TCVideoCallAdapterKit-PrefixHeader.pch */; };
+		CF1611F11E6C00F900C6A6DA /* TCVideoCallAdapterKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1611EF1E6C00F900C6A6DA /* TCVideoCallAdapterKit.h */; };
+		CF1612051E6C019200C6A6DA /* AVFrameDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1611F41E6C019200C6A6DA /* AVFrameDispatcher.h */; };
+		CF1612061E6C019200C6A6DA /* AVFrameDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1611F51E6C019200C6A6DA /* AVFrameDispatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF1612071E6C019200C6A6DA /* AVGLBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1611F61E6C019200C6A6DA /* AVGLBaseView.h */; };
+		CF1612081E6C019200C6A6DA /* AVGLBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1611F71E6C019200C6A6DA /* AVGLBaseView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF1612091E6C019200C6A6DA /* AVGLCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1611F81E6C019200C6A6DA /* AVGLCommon.h */; };
+		CF16120A1E6C019200C6A6DA /* AVGLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1611F91E6C019200C6A6DA /* AVGLCommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF16120B1E6C019200C6A6DA /* AVGLImage.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1611FA1E6C019200C6A6DA /* AVGLImage.h */; };
+		CF16120C1E6C019200C6A6DA /* AVGLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1611FB1E6C019200C6A6DA /* AVGLImage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF16120D1E6C019200C6A6DA /* AVGLRenderView+Animation.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1611FC1E6C019200C6A6DA /* AVGLRenderView+Animation.h */; };
+		CF16120E1E6C019200C6A6DA /* AVGLRenderView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1611FD1E6C019200C6A6DA /* AVGLRenderView+Animation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF16120F1E6C019200C6A6DA /* AVGLRenderView.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1611FE1E6C019200C6A6DA /* AVGLRenderView.h */; };
+		CF1612101E6C019200C6A6DA /* AVGLRenderView.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF1611FF1E6C019200C6A6DA /* AVGLRenderView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF1612111E6C019200C6A6DA /* AVGLShareInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1612001E6C019200C6A6DA /* AVGLShareInstance.h */; };
+		CF1612121E6C019200C6A6DA /* AVGLShareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1612011E6C019200C6A6DA /* AVGLShareInstance.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CF1612131E6C019200C6A6DA /* AVOpenGLHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1612021E6C019200C6A6DA /* AVOpenGLHeader.h */; };
+		CF1612141E6C019200C6A6DA /* Shaderf.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CF1612031E6C019200C6A6DA /* Shaderf.glsl */; };
+		CF1612151E6C019200C6A6DA /* Shaderv.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CF1612041E6C019200C6A6DA /* Shaderv.glsl */; };
+		CF1612191E6C01D300C6A6DA /* TCAVLivePreView.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1612171E6C01D300C6A6DA /* TCAVLivePreView.h */; };
+		CF16121A1E6C01D300C6A6DA /* TCAVLivePreView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1612181E6C01D300C6A6DA /* TCAVLivePreView.m */; };
+		CF16121D1E6C023E00C6A6DA /* TCAVFrameDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CF16121B1E6C023E00C6A6DA /* TCAVFrameDispatcher.h */; };
+		CF16121E1E6C023E00C6A6DA /* TCAVFrameDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CF16121C1E6C023E00C6A6DA /* TCAVFrameDispatcher.m */; };
+		CF1612261E6C032500C6A6DA /* TCIMUserEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1612241E6C032500C6A6DA /* TCIMUserEntity.h */; };
+		CF1612271E6C032500C6A6DA /* TCIMUserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1612251E6C032500C6A6DA /* TCIMUserEntity.m */; };
+		CF16122A1E6C033300C6A6DA /* TCAVIMUserEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1612281E6C033300C6A6DA /* TCAVIMUserEntity.h */; };
+		CF16122B1E6C033300C6A6DA /* TCAVIMUserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1612291E6C033300C6A6DA /* TCAVIMUserEntity.m */; };
+		CF16122F1E6C03AF00C6A6DA /* TCIMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CF16122D1E6C03AF00C6A6DA /* TCIMManager.h */; };
+		CF1612301E6C03AF00C6A6DA /* TCIMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF16122E1E6C03AF00C6A6DA /* TCIMManager.m */; };
+		CF1612351E6C04D100C6A6DA /* TCIMHost.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1612311E6C04D100C6A6DA /* TCIMHost.h */; };
+		CF1612361E6C04D100C6A6DA /* TCIMHost.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1612321E6C04D100C6A6DA /* TCIMHost.m */; };
+		CF1612371E6C04D100C6A6DA /* TCIMLoginParam.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1612331E6C04D100C6A6DA /* TCIMLoginParam.h */; };
+		CF1612381E6C04D100C6A6DA /* TCIMLoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1612341E6C04D100C6A6DA /* TCIMLoginParam.m */; };
+		CF16124C1E6C061600C6A6DA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF16124B1E6C061600C6A6DA /* libsqlite3.tbd */; };
+		CF16124E1E6C061B00C6A6DA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF16124D1E6C061B00C6A6DA /* AVFoundation.framework */; };
+		CF1612501E6C062000C6A6DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF16124F1E6C062000C6A6DA /* UIKit.framework */; };
+		CF1612521E6C062700C6A6DA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612511E6C062700C6A6DA /* Security.framework */; };
+		CF1612541E6C062C00C6A6DA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612531E6C062C00C6A6DA /* ImageIO.framework */; };
+		CF1612561E6C063600C6A6DA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612551E6C063600C6A6DA /* SystemConfiguration.framework */; };
+		CF1612581E6C063E00C6A6DA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612571E6C063E00C6A6DA /* libc++.tbd */; };
+		CF16125A1E6C064600C6A6DA /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612591E6C064600C6A6DA /* libiconv.tbd */; };
+		CF16125C1E6C064C00C6A6DA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF16125B1E6C064C00C6A6DA /* AudioToolbox.framework */; };
+		CF16125E1E6C065400C6A6DA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF16125D1E6C065400C6A6DA /* CoreTelephony.framework */; };
+		CF1612601E6C065D00C6A6DA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF16125F1E6C065D00C6A6DA /* CoreText.framework */; };
+		CF1612621E6C066300C6A6DA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612611E6C066300C6A6DA /* MobileCoreServices.framework */; };
+		CF1612641E6C066900C6A6DA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612631E6C066900C6A6DA /* libz.tbd */; };
+		CF1612661E6C066F00C6A6DA /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612651E6C066F00C6A6DA /* libstdc++.6.tbd */; };
+		CF1612681E6C067500C6A6DA /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612671E6C067500C6A6DA /* libresolv.tbd */; };
+		CF16126D1E6C074100C6A6DA /* TCAVShareContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CF16126B1E6C074100C6A6DA /* TCAVShareContext.h */; };
+		CF16126E1E6C074100C6A6DA /* TCAVShareContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CF16126C1E6C074100C6A6DA /* TCAVShareContext.m */; };
+		CF16127B1E6C07EE00C6A6DA /* TCAVHost.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1612771E6C07EE00C6A6DA /* TCAVHost.h */; };
+		CF16127C1E6C07EE00C6A6DA /* TCAVHost.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1612781E6C07EE00C6A6DA /* TCAVHost.m */; };
+		CF16127D1E6C07EE00C6A6DA /* TCAVIMAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1612791E6C07EE00C6A6DA /* TCAVIMAdapter.h */; };
+		CF16127E1E6C07EE00C6A6DA /* TCAVIMAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF16127A1E6C07EE00C6A6DA /* TCAVIMAdapter.m */; };
+		CF16129B1E6C0B7600C6A6DA /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612921E6C0B7600C6A6DA /* Analytics.framework */; };
+		CF16129C1E6C0B7600C6A6DA /* framework说明.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF1612931E6C0B7600C6A6DA /* framework说明.txt */; };
+		CF16129D1E6C0B7600C6A6DA /* IMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612941E6C0B7600C6A6DA /* IMCore.framework */; };
+		CF16129E1E6C0B7600C6A6DA /* ImSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612951E6C0B7600C6A6DA /* ImSDK.framework */; };
+		CF16129F1E6C0B7600C6A6DA /* IMSDKBugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612961E6C0B7600C6A6DA /* IMSDKBugly.framework */; };
+		CF1612A01E6C0B7600C6A6DA /* QALSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612971E6C0B7600C6A6DA /* QALSDK.framework */; };
+		CF1612A11E6C0B7600C6A6DA /* QAVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612981E6C0B7600C6A6DA /* QAVSDK.framework */; };
+		CF1612A21E6C0B7600C6A6DA /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1612991E6C0B7600C6A6DA /* TLSSDK.framework */; };
+		CF1612A31E6C0B7600C6A6DA /* xplatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF16129A1E6C0B7600C6A6DA /* xplatform.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF1611E21E6C005D00C6A6DA /* TCVideoCallAdapterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCVideoCallAdapterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF1611E51E6C005D00C6A6DA /* TCVideoCallAdapterKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCVideoCallAdapterKit.h; sourceTree = "<group>"; };
 		CF1611E61E6C005D00C6A6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF1611EE1E6C00F900C6A6DA /* TCVideoCallAdapterKit-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCVideoCallAdapterKit-PrefixHeader.pch"; sourceTree = "<group>"; };
+		CF1611EF1E6C00F900C6A6DA /* TCVideoCallAdapterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVideoCallAdapterKit.h; sourceTree = "<group>"; };
+		CF1611F41E6C019200C6A6DA /* AVFrameDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFrameDispatcher.h; sourceTree = "<group>"; };
+		CF1611F51E6C019200C6A6DA /* AVFrameDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFrameDispatcher.m; sourceTree = "<group>"; };
+		CF1611F61E6C019200C6A6DA /* AVGLBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLBaseView.h; sourceTree = "<group>"; };
+		CF1611F71E6C019200C6A6DA /* AVGLBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLBaseView.m; sourceTree = "<group>"; };
+		CF1611F81E6C019200C6A6DA /* AVGLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLCommon.h; sourceTree = "<group>"; };
+		CF1611F91E6C019200C6A6DA /* AVGLCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLCommon.m; sourceTree = "<group>"; };
+		CF1611FA1E6C019200C6A6DA /* AVGLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLImage.h; sourceTree = "<group>"; };
+		CF1611FB1E6C019200C6A6DA /* AVGLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLImage.m; sourceTree = "<group>"; };
+		CF1611FC1E6C019200C6A6DA /* AVGLRenderView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVGLRenderView+Animation.h"; sourceTree = "<group>"; };
+		CF1611FD1E6C019200C6A6DA /* AVGLRenderView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVGLRenderView+Animation.m"; sourceTree = "<group>"; };
+		CF1611FE1E6C019200C6A6DA /* AVGLRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLRenderView.h; sourceTree = "<group>"; };
+		CF1611FF1E6C019200C6A6DA /* AVGLRenderView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AVGLRenderView.mm; sourceTree = "<group>"; };
+		CF1612001E6C019200C6A6DA /* AVGLShareInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLShareInstance.h; sourceTree = "<group>"; };
+		CF1612011E6C019200C6A6DA /* AVGLShareInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLShareInstance.m; sourceTree = "<group>"; };
+		CF1612021E6C019200C6A6DA /* AVOpenGLHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOpenGLHeader.h; sourceTree = "<group>"; };
+		CF1612031E6C019200C6A6DA /* Shaderf.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shaderf.glsl; sourceTree = "<group>"; };
+		CF1612041E6C019200C6A6DA /* Shaderv.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shaderv.glsl; sourceTree = "<group>"; };
+		CF1612171E6C01D300C6A6DA /* TCAVLivePreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVLivePreView.h; sourceTree = "<group>"; };
+		CF1612181E6C01D300C6A6DA /* TCAVLivePreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVLivePreView.m; sourceTree = "<group>"; };
+		CF16121B1E6C023E00C6A6DA /* TCAVFrameDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVFrameDispatcher.h; sourceTree = "<group>"; };
+		CF16121C1E6C023E00C6A6DA /* TCAVFrameDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVFrameDispatcher.m; sourceTree = "<group>"; };
+		CF1612241E6C032500C6A6DA /* TCIMUserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCIMUserEntity.h; sourceTree = "<group>"; };
+		CF1612251E6C032500C6A6DA /* TCIMUserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCIMUserEntity.m; sourceTree = "<group>"; };
+		CF1612281E6C033300C6A6DA /* TCAVIMUserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVIMUserEntity.h; sourceTree = "<group>"; };
+		CF1612291E6C033300C6A6DA /* TCAVIMUserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVIMUserEntity.m; sourceTree = "<group>"; };
+		CF16122D1E6C03AF00C6A6DA /* TCIMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCIMManager.h; sourceTree = "<group>"; };
+		CF16122E1E6C03AF00C6A6DA /* TCIMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCIMManager.m; sourceTree = "<group>"; };
+		CF1612311E6C04D100C6A6DA /* TCIMHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCIMHost.h; sourceTree = "<group>"; };
+		CF1612321E6C04D100C6A6DA /* TCIMHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCIMHost.m; sourceTree = "<group>"; };
+		CF1612331E6C04D100C6A6DA /* TCIMLoginParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCIMLoginParam.h; sourceTree = "<group>"; };
+		CF1612341E6C04D100C6A6DA /* TCIMLoginParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCIMLoginParam.m; sourceTree = "<group>"; };
+		CF16124B1E6C061600C6A6DA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CF16124D1E6C061B00C6A6DA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CF16124F1E6C062000C6A6DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF1612511E6C062700C6A6DA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CF1612531E6C062C00C6A6DA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		CF1612551E6C063600C6A6DA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CF1612571E6C063E00C6A6DA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		CF1612591E6C064600C6A6DA /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		CF16125B1E6C064C00C6A6DA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CF16125D1E6C065400C6A6DA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		CF16125F1E6C065D00C6A6DA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		CF1612611E6C066300C6A6DA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CF1612631E6C066900C6A6DA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CF1612651E6C066F00C6A6DA /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		CF1612671E6C067500C6A6DA /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		CF16126B1E6C074100C6A6DA /* TCAVShareContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVShareContext.h; sourceTree = "<group>"; };
+		CF16126C1E6C074100C6A6DA /* TCAVShareContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVShareContext.m; sourceTree = "<group>"; };
+		CF1612771E6C07EE00C6A6DA /* TCAVHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVHost.h; sourceTree = "<group>"; };
+		CF1612781E6C07EE00C6A6DA /* TCAVHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVHost.m; sourceTree = "<group>"; };
+		CF1612791E6C07EE00C6A6DA /* TCAVIMAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVIMAdapter.h; sourceTree = "<group>"; };
+		CF16127A1E6C07EE00C6A6DA /* TCAVIMAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVIMAdapter.m; sourceTree = "<group>"; };
+		CF1612921E6C0B7600C6A6DA /* Analytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Analytics.framework; sourceTree = "<group>"; };
+		CF1612931E6C0B7600C6A6DA /* framework说明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "framework说明.txt"; sourceTree = "<group>"; };
+		CF1612941E6C0B7600C6A6DA /* IMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMCore.framework; sourceTree = "<group>"; };
+		CF1612951E6C0B7600C6A6DA /* ImSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImSDK.framework; sourceTree = "<group>"; };
+		CF1612961E6C0B7600C6A6DA /* IMSDKBugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMSDKBugly.framework; sourceTree = "<group>"; };
+		CF1612971E6C0B7600C6A6DA /* QALSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QALSDK.framework; sourceTree = "<group>"; };
+		CF1612981E6C0B7600C6A6DA /* QAVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAVSDK.framework; sourceTree = "<group>"; };
+		CF1612991E6C0B7600C6A6DA /* TLSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TLSSDK.framework; sourceTree = "<group>"; };
+		CF16129A1E6C0B7600C6A6DA /* xplatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = xplatform.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +145,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1612681E6C067500C6A6DA /* libresolv.tbd in Frameworks */,
+				CF16129F1E6C0B7600C6A6DA /* IMSDKBugly.framework in Frameworks */,
+				CF1612661E6C066F00C6A6DA /* libstdc++.6.tbd in Frameworks */,
+				CF1612641E6C066900C6A6DA /* libz.tbd in Frameworks */,
+				CF1612621E6C066300C6A6DA /* MobileCoreServices.framework in Frameworks */,
+				CF1612601E6C065D00C6A6DA /* CoreText.framework in Frameworks */,
+				CF16125E1E6C065400C6A6DA /* CoreTelephony.framework in Frameworks */,
+				CF16125C1E6C064C00C6A6DA /* AudioToolbox.framework in Frameworks */,
+				CF1612A01E6C0B7600C6A6DA /* QALSDK.framework in Frameworks */,
+				CF16129B1E6C0B7600C6A6DA /* Analytics.framework in Frameworks */,
+				CF16125A1E6C064600C6A6DA /* libiconv.tbd in Frameworks */,
+				CF1612581E6C063E00C6A6DA /* libc++.tbd in Frameworks */,
+				CF1612561E6C063600C6A6DA /* SystemConfiguration.framework in Frameworks */,
+				CF16129E1E6C0B7600C6A6DA /* ImSDK.framework in Frameworks */,
+				CF16124E1E6C061B00C6A6DA /* AVFoundation.framework in Frameworks */,
+				CF16129D1E6C0B7600C6A6DA /* IMCore.framework in Frameworks */,
+				CF1612541E6C062C00C6A6DA /* ImageIO.framework in Frameworks */,
+				CF1612A21E6C0B7600C6A6DA /* TLSSDK.framework in Frameworks */,
+				CF1612521E6C062700C6A6DA /* Security.framework in Frameworks */,
+				CF1612A11E6C0B7600C6A6DA /* QAVSDK.framework in Frameworks */,
+				CF1612A31E6C0B7600C6A6DA /* xplatform.framework in Frameworks */,
+				CF1612501E6C062000C6A6DA /* UIKit.framework in Frameworks */,
+				CF16124C1E6C061600C6A6DA /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +179,7 @@
 			children = (
 				CF1611E41E6C005D00C6A6DA /* TCVideoCallAdapterKit */,
 				CF1611E31E6C005D00C6A6DA /* Products */,
+				CF16123A1E6C05D600C6A6DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +194,151 @@
 		CF1611E41E6C005D00C6A6DA /* TCVideoCallAdapterKit */ = {
 			isa = PBXGroup;
 			children = (
-				CF1611E51E6C005D00C6A6DA /* TCVideoCallAdapterKit.h */,
+				CF16127F1E6C0ACB00C6A6DA /* Frameworks */,
+				CF1612691E6C072600C6A6DA /* TCAVIMAdapter */,
+				CF16122C1E6C03A700C6A6DA /* TCIMManager */,
+				CF1612231E6C030100C6A6DA /* UserEntity */,
+				CF1612161E6C01BC00C6A6DA /* AVLivePreView */,
+				CF1611F21E6C017F00C6A6DA /* OpenGL */,
+				CF1611ED1E6C00F900C6A6DA /* Header */,
 				CF1611E61E6C005D00C6A6DA /* Info.plist */,
 			);
 			path = TCVideoCallAdapterKit;
+			sourceTree = "<group>";
+		};
+		CF1611ED1E6C00F900C6A6DA /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				CF1611EE1E6C00F900C6A6DA /* TCVideoCallAdapterKit-PrefixHeader.pch */,
+				CF1611EF1E6C00F900C6A6DA /* TCVideoCallAdapterKit.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		CF1611F21E6C017F00C6A6DA /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				CF1611F31E6C019200C6A6DA /* AVOpenGL */,
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		CF1611F31E6C019200C6A6DA /* AVOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				CF1611F41E6C019200C6A6DA /* AVFrameDispatcher.h */,
+				CF1611F51E6C019200C6A6DA /* AVFrameDispatcher.m */,
+				CF1611F61E6C019200C6A6DA /* AVGLBaseView.h */,
+				CF1611F71E6C019200C6A6DA /* AVGLBaseView.m */,
+				CF1611F81E6C019200C6A6DA /* AVGLCommon.h */,
+				CF1611F91E6C019200C6A6DA /* AVGLCommon.m */,
+				CF1611FA1E6C019200C6A6DA /* AVGLImage.h */,
+				CF1611FB1E6C019200C6A6DA /* AVGLImage.m */,
+				CF1611FC1E6C019200C6A6DA /* AVGLRenderView+Animation.h */,
+				CF1611FD1E6C019200C6A6DA /* AVGLRenderView+Animation.m */,
+				CF1611FE1E6C019200C6A6DA /* AVGLRenderView.h */,
+				CF1611FF1E6C019200C6A6DA /* AVGLRenderView.mm */,
+				CF1612001E6C019200C6A6DA /* AVGLShareInstance.h */,
+				CF1612011E6C019200C6A6DA /* AVGLShareInstance.m */,
+				CF1612021E6C019200C6A6DA /* AVOpenGLHeader.h */,
+				CF1612031E6C019200C6A6DA /* Shaderf.glsl */,
+				CF1612041E6C019200C6A6DA /* Shaderv.glsl */,
+			);
+			path = AVOpenGL;
+			sourceTree = "<group>";
+		};
+		CF1612161E6C01BC00C6A6DA /* AVLivePreView */ = {
+			isa = PBXGroup;
+			children = (
+				CF1612171E6C01D300C6A6DA /* TCAVLivePreView.h */,
+				CF1612181E6C01D300C6A6DA /* TCAVLivePreView.m */,
+				CF16121B1E6C023E00C6A6DA /* TCAVFrameDispatcher.h */,
+				CF16121C1E6C023E00C6A6DA /* TCAVFrameDispatcher.m */,
+			);
+			path = AVLivePreView;
+			sourceTree = "<group>";
+		};
+		CF1612231E6C030100C6A6DA /* UserEntity */ = {
+			isa = PBXGroup;
+			children = (
+				CF1612241E6C032500C6A6DA /* TCIMUserEntity.h */,
+				CF1612251E6C032500C6A6DA /* TCIMUserEntity.m */,
+				CF1612281E6C033300C6A6DA /* TCAVIMUserEntity.h */,
+				CF1612291E6C033300C6A6DA /* TCAVIMUserEntity.m */,
+			);
+			path = UserEntity;
+			sourceTree = "<group>";
+		};
+		CF16122C1E6C03A700C6A6DA /* TCIMManager */ = {
+			isa = PBXGroup;
+			children = (
+				CF16122D1E6C03AF00C6A6DA /* TCIMManager.h */,
+				CF16122E1E6C03AF00C6A6DA /* TCIMManager.m */,
+				CF1612311E6C04D100C6A6DA /* TCIMHost.h */,
+				CF1612321E6C04D100C6A6DA /* TCIMHost.m */,
+				CF1612331E6C04D100C6A6DA /* TCIMLoginParam.h */,
+				CF1612341E6C04D100C6A6DA /* TCIMLoginParam.m */,
+			);
+			path = TCIMManager;
+			sourceTree = "<group>";
+		};
+		CF16123A1E6C05D600C6A6DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF1612671E6C067500C6A6DA /* libresolv.tbd */,
+				CF1612651E6C066F00C6A6DA /* libstdc++.6.tbd */,
+				CF1612631E6C066900C6A6DA /* libz.tbd */,
+				CF1612611E6C066300C6A6DA /* MobileCoreServices.framework */,
+				CF16125F1E6C065D00C6A6DA /* CoreText.framework */,
+				CF16125D1E6C065400C6A6DA /* CoreTelephony.framework */,
+				CF16125B1E6C064C00C6A6DA /* AudioToolbox.framework */,
+				CF1612591E6C064600C6A6DA /* libiconv.tbd */,
+				CF1612571E6C063E00C6A6DA /* libc++.tbd */,
+				CF1612551E6C063600C6A6DA /* SystemConfiguration.framework */,
+				CF1612531E6C062C00C6A6DA /* ImageIO.framework */,
+				CF1612511E6C062700C6A6DA /* Security.framework */,
+				CF16124F1E6C062000C6A6DA /* UIKit.framework */,
+				CF16124D1E6C061B00C6A6DA /* AVFoundation.framework */,
+				CF16124B1E6C061600C6A6DA /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1612691E6C072600C6A6DA /* TCAVIMAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				CF1612771E6C07EE00C6A6DA /* TCAVHost.h */,
+				CF1612781E6C07EE00C6A6DA /* TCAVHost.m */,
+				CF1612791E6C07EE00C6A6DA /* TCAVIMAdapter.h */,
+				CF16127A1E6C07EE00C6A6DA /* TCAVIMAdapter.m */,
+				CF16126A1E6C073800C6A6DA /* ShareContext */,
+			);
+			path = TCAVIMAdapter;
+			sourceTree = "<group>";
+		};
+		CF16126A1E6C073800C6A6DA /* ShareContext */ = {
+			isa = PBXGroup;
+			children = (
+				CF16126B1E6C074100C6A6DA /* TCAVShareContext.h */,
+				CF16126C1E6C074100C6A6DA /* TCAVShareContext.m */,
+			);
+			path = ShareContext;
+			sourceTree = "<group>";
+		};
+		CF16127F1E6C0ACB00C6A6DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF1612921E6C0B7600C6A6DA /* Analytics.framework */,
+				CF1612931E6C0B7600C6A6DA /* framework说明.txt */,
+				CF1612941E6C0B7600C6A6DA /* IMCore.framework */,
+				CF1612951E6C0B7600C6A6DA /* ImSDK.framework */,
+				CF1612961E6C0B7600C6A6DA /* IMSDKBugly.framework */,
+				CF1612971E6C0B7600C6A6DA /* QALSDK.framework */,
+				CF1612981E6C0B7600C6A6DA /* QAVSDK.framework */,
+				CF1612991E6C0B7600C6A6DA /* TLSSDK.framework */,
+				CF16129A1E6C0B7600C6A6DA /* xplatform.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +348,26 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF1611E71E6C005D00C6A6DA /* TCVideoCallAdapterKit.h in Headers */,
+				CF16122F1E6C03AF00C6A6DA /* TCIMManager.h in Headers */,
+				CF1612351E6C04D100C6A6DA /* TCIMHost.h in Headers */,
+				CF1612371E6C04D100C6A6DA /* TCIMLoginParam.h in Headers */,
+				CF16127B1E6C07EE00C6A6DA /* TCAVHost.h in Headers */,
+				CF16127D1E6C07EE00C6A6DA /* TCAVIMAdapter.h in Headers */,
+				CF1612071E6C019200C6A6DA /* AVGLBaseView.h in Headers */,
+				CF1612051E6C019200C6A6DA /* AVFrameDispatcher.h in Headers */,
+				CF1611F11E6C00F900C6A6DA /* TCVideoCallAdapterKit.h in Headers */,
+				CF16121D1E6C023E00C6A6DA /* TCAVFrameDispatcher.h in Headers */,
+				CF1612131E6C019200C6A6DA /* AVOpenGLHeader.h in Headers */,
+				CF16120F1E6C019200C6A6DA /* AVGLRenderView.h in Headers */,
+				CF1611F01E6C00F900C6A6DA /* TCVideoCallAdapterKit-PrefixHeader.pch in Headers */,
+				CF16120B1E6C019200C6A6DA /* AVGLImage.h in Headers */,
+				CF16120D1E6C019200C6A6DA /* AVGLRenderView+Animation.h in Headers */,
+				CF16126D1E6C074100C6A6DA /* TCAVShareContext.h in Headers */,
+				CF1612261E6C032500C6A6DA /* TCIMUserEntity.h in Headers */,
+				CF1612091E6C019200C6A6DA /* AVGLCommon.h in Headers */,
+				CF16122A1E6C033300C6A6DA /* TCAVIMUserEntity.h in Headers */,
+				CF1612111E6C019200C6A6DA /* AVGLShareInstance.h in Headers */,
+				CF1612191E6C01D300C6A6DA /* TCAVLivePreView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +429,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1612141E6C019200C6A6DA /* Shaderf.glsl in Resources */,
+				CF1612151E6C019200C6A6DA /* Shaderv.glsl in Resources */,
+				CF16129C1E6C0B7600C6A6DA /* framework说明.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +442,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1612381E6C04D100C6A6DA /* TCIMLoginParam.m in Sources */,
+				CF1612361E6C04D100C6A6DA /* TCIMHost.m in Sources */,
+				CF16121E1E6C023E00C6A6DA /* TCAVFrameDispatcher.m in Sources */,
+				CF16122B1E6C033300C6A6DA /* TCAVIMUserEntity.m in Sources */,
+				CF1612061E6C019200C6A6DA /* AVFrameDispatcher.m in Sources */,
+				CF16120A1E6C019200C6A6DA /* AVGLCommon.m in Sources */,
+				CF1612121E6C019200C6A6DA /* AVGLShareInstance.m in Sources */,
+				CF16127C1E6C07EE00C6A6DA /* TCAVHost.m in Sources */,
+				CF16121A1E6C01D300C6A6DA /* TCAVLivePreView.m in Sources */,
+				CF1612301E6C03AF00C6A6DA /* TCIMManager.m in Sources */,
+				CF1612101E6C019200C6A6DA /* AVGLRenderView.mm in Sources */,
+				CF1612081E6C019200C6A6DA /* AVGLBaseView.m in Sources */,
+				CF1612271E6C032500C6A6DA /* TCIMUserEntity.m in Sources */,
+				CF16120C1E6C019200C6A6DA /* AVGLImage.m in Sources */,
+				CF16126E1E6C074100C6A6DA /* TCAVShareContext.m in Sources */,
+				CF16120E1E6C019200C6A6DA /* AVGLRenderView+Animation.m in Sources */,
+				CF16127E1E6C07EE00C6A6DA /* TCAVIMAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +569,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TCVideoCallAdapterKit/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "${PRODUCT_NAME}/Header/${PRODUCT_NAME}-PrefixHeader.pch";
 				INFOPLIST_FILE = TCVideoCallAdapterKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -258,6 +591,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TCVideoCallAdapterKit/Frameworks",
+				);
+				GCC_PREFIX_HEADER = "${PRODUCT_NAME}/Header/${PRODUCT_NAME}-PrefixHeader.pch";
 				INFOPLIST_FILE = TCVideoCallAdapterKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
