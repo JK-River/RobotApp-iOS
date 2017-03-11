@@ -25,9 +25,9 @@ FOUNDATION_EXPORT const unsigned char TCVideoCallAdapterKitVersionString[];
 #import <TCVideoCallAdapterKit/TCIMManager.h>
 #import <TCVideoCallAdapterKit/TCIMHost.h>
 #import <TCVideoCallAdapterKit/TCIMLoginParam.h>
-#import <TCVideoCallAdapterKit/TCAVShareContext.h>
 #import <TCVideoCallAdapterKit/TCAVHost.h>
 #import <TCVideoCallAdapterKit/TCAVIMAdapter.h>
+#import <TCVideoCallAdapterKit/TCAVLivePreView.h>
 
 
 // 若是通过引用源码或者lib库的方式使用类库，则需要以 #import "TCVideoCallAdapterKit.h" 的方式引入头文件
@@ -38,8 +38,8 @@ FOUNDATION_EXPORT const unsigned char TCVideoCallAdapterKitVersionString[];
 #import "TCIMManager.h"
 #import "TCIMHost.h"
 #import "TCIMLoginParam.h"
-#import "TCAVShareContext.h"
 #import "TCAVHost.h"
 #import "TCAVIMAdapter.h"
+#import "TCAVLivePreView.h"
 
 #endif
