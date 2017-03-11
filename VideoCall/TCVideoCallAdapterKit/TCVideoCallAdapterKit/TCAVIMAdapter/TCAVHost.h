@@ -45,6 +45,6 @@ typedef NS_ENUM(NSInteger, TCAVCtrlState) {
 @property (nonatomic, copy) NSString *liveIMChatRoomId;
 
 // 当前聊天室主播信息
-@property (nonatomic, copy) TCAVIMUserEntity *liveAVIMModel;
+@property (nonatomic, strong) TCAVIMUserEntity *liveAVIMModel;
 
 @end

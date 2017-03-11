@@ -8,6 +8,9 @@
 
 #import "TCIMManager.h"
 
+#import <TLSUI/TLSUI.h>
+#import <TLSSDK/TLSHelper.h>
+
 #import "TCIMUserEntity.h"
 #import "TCIMHost.h"
 #import "TCIMLoginParam.h"
@@ -39,6 +42,26 @@ static TCIMManager *_sharedInstance = nil;
     
 }
 
++ (instancetype)initHostWith:(TCIMHost *)host tlsDelegte:(id)delegate
+{
+    static dispatch_once_t predicate;
+    
+    dispatch_once(&predicate, ^{
+        _sharedInstance = [[TCIMManager alloc] init];
+        [_sharedInstance configIMHost:host];
+        
+        if (delegate)
+        {
+            TLSUILoginSetting *setting = [[TLSUILoginSetting alloc] init];
+            
+            setting.enableGuest = YES;
+            
+            TLSUILogin(delegate, setting);
+        }
+    });
+    
+    return _sharedInstance;
+}
 + (instancetype)sharedInstance
 {
     return _sharedInstance;
@@ -175,6 +198,12 @@ static TCIMManager *_sharedInstance = nil;
                 break;
         }
     }
+}
+
+// 在测试demo中用户可以通过这个方法获取用户sig
+- (NSString *)getSigWithIdentifierInTestEnvironment:(NSString *)identifier
+{
+   return [[TLSHelper getInstance] getTLSUserSig:identifier];
 }
 @end
 

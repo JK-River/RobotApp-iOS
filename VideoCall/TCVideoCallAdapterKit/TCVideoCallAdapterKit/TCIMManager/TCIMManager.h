@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <ImSDK/ImSDK.h>
+
 typedef void (^TCOfflineBlock)();
 typedef void (^TCLoginBlock)(BOOL success);
 typedef void (^TCLogoutBlock)(BOOL success);
@@ -33,6 +35,12 @@ typedef void (^TCLogoutBlock)(BOOL success);
 
 + (instancetype)initHostWith:(TCIMHost *)host;
 
+// 供测试demo使用，跳转TC提供的UI
++ (instancetype)initHostWith:(TCIMHost *)host tlsDelegte:(id)delegate;
+
+// 在测试demo中用户可以通过这个方法获取用户sig
+- (NSString *)getSigWithIdentifierInTestEnvironment:(NSString *)identifier;
+
 // 被踢下线时，进行调用
 @property (nonatomic, copy) TCOfflineBlock offlineBlock;
 
@@ -56,6 +64,8 @@ typedef void (^TCLogoutBlock)(BOOL success);
 
 // 收到C2C自定义消息
 - (void)onRecvC2CSender:(TCIMUserEntity *)user customMsg:(TIMCustomElem *)msg;
+
+// 如果有sig获取方法，不回调此方法
 
 @end
 

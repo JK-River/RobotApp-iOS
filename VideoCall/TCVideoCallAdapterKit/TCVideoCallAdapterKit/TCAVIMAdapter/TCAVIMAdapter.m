@@ -26,6 +26,9 @@
 {
     if (self = [super init])
     {
+        self.mainUser = mainUser;
+        self.localUser = localUser;
+        
         localUser.delegate = self;
     }
     return self;
@@ -33,6 +36,8 @@
 // 创建房间
 - (void)creatRoomWith:(TCAVHost *)avhost completion:(TCAVIMAdapterEnterRoomBlock)block
 {
+    
+    self.enterRoomBlock = block;
     
     QAVMultiParam*param = [[QAVMultiParam alloc]init];
     
@@ -56,12 +61,16 @@
 
 -(void)OnLocalVideoPreview:(QAVVideoFrame *)frameData
 {
-    // 添加画面
-    [self.preView addRenderFor:self.localUser.userId
+    if (self.localUser.isShow)
+    {
+        // 添加画面
+        [self.preView addRenderFor:self.localUser.userId
                    withRenderFrame:self.localUser.avInteractArea];
-    
-    // 渲染画面
-    [self.preView addRenderFor:self.localUser.userId withVideoFrame:frameData isFull:[self.localUser.userId isEqualToString:self.mainUser.userId] isLocal:YES];
+        
+        // 渲染画面
+        [self.preView addRenderFor:self.localUser.userId withVideoFrame:frameData isFull:[self.localUser.userId isEqualToString:self.mainUser.userId] isLocal:YES];
+
+    }
 }
 
 -(void)OnLocalVideoPreProcess:(QAVVideoFrame*)frameData
@@ -389,33 +398,22 @@
 -(void)getAVIMAdapterUsersAvInteractArea
 {
     if (self.delegate
-        &&[self.delegate respondsToSelector:@selector(getAVIMAdapterUsersAvInteractArea:)])
+        &&[self.delegate respondsToSelector:@selector(getAVIMAdapterUsersAvInteractArea)])
     {
-        NSDictionary *areaDic = [self.delegate getAVIMAdapterUsersAvInteractArea:self.localUser.isShow];
-        
-        if (self.localUser.isShow)
-        {
-            self.localUser.avInteractArea = CGRectFromString(areaDic[self.localUser.userId]);
-        }
-        
+        NSDictionary *areaDic = [self.delegate getAVIMAdapterUsersAvInteractArea];
+                
         [self.userArray enumerateObjectsUsingBlock:^(TCAVIMUserEntity * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             obj.avInteractArea = CGRectFromString(areaDic[obj.userId]);
         }];
     }
     else
     {
-        if (self.localUser.isShow)
-        {
-            self.localUser.avInteractArea = CGRectMake(0, 0, 120, 90);
-        }
-
         [self.userArray enumerateObjectsUsingBlock:^(TCAVIMUserEntity * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             
             NSInteger index = self.localUser.isShow ? 1 : 0;
             
             obj.avInteractArea = CGRectMake(120 * (index + idx), 0, 120, 90);
         }];
-
     }
 }
 #pragma mark - TCAVIMOperationActionDelegate

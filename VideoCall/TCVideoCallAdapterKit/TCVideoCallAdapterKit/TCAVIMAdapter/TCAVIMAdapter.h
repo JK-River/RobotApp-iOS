@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <QAVSDK/QAVSDK.h>
+
 @class TCAVLivePreView;
 @class TCAVIMUserEntity;
 @class TCAVHost;
@@ -62,14 +64,13 @@ typedef void (^TCAVIMLocalUserExitRoomBlock)();
  *
  *  @brief 获取users显示区域字典
  *
- *  @param includeLocal 是否包含本地画面区域
  *
  *  @return 区域字典，字典key为userID，value为rect对应的string
  *
  *  @since 1.0
  */
 
-- (NSDictionary *)getAVIMAdapterUsersAvInteractArea:(BOOL)includeLocal;
+- (NSDictionary *)getAVIMAdapterUsersAvInteractArea;
 
 @end
 
